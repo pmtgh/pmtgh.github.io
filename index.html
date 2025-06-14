@@ -1,1 +1,18 @@
-h s
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Toggle Button</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="toggle-btn" class="white">Toggle Color</button>
+  <script>
+    const button = document.getElementById('toggle-btn');
+    button.addEventListener('click', () => {
+      button.classList.toggle('white');
+      button.classList.toggle('black');
+    });
+  </script>
+</body>
+</html>
